@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NFT preview card component Frontend Mentor Challenge built with TailwindCSS "
+    />
+    <meta name="author" content="Dean Howe" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-dark-blue-bg">
+    <main
+      class="card__wrapper flex flex-col bg-dark-blue-card p-6 rounded-[15px] max-w-[327px] md:max-w-[350px]"
+    >
+      <div
+        class="active flex mb-6 rounded-lg z-10 w-full h-full relative cursor-pointer group"
+      >
+        <div
+          class="absolute top-0 bottom-0 right-0 left-0 bg-fm-cyan/50 rounded-lg justify-center items-center hidden group-hover:flex"
+        >
+          <img src="images/icon-view.svg" alt="" />
+        </div>
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="transparent cube glowing red and blue"
+          width="278"
+          height="278"
+          class="rounded-lg md:w-[302px] md:h-[302px]"
+        />
+      </div>
+      <h1
+        class="text-white text-[22px] font-semibold mb-3 hover:text-fm-cyan cursor-pointer"
+      >
+        Equilibrium #3429
+      </h1>
+      <p class="text-soft-blue text-lg font-light mb-4">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div
+        class="price__container flex justify-between border-b border-dark-blue-line pb-4 mb-4"
+      >
+        <div class="price__left flex items-center justify-center gap-2">
+          <img src="images/icon-ethereum.svg" alt="" width="11" height="18" />
+          <p class="text-fm-cyan text-[15px] uppercase font-semibold">
+            0.041 eth
+          </p>
+        </div>
+        <div class="price__right flex items-center justify-center gap-2">
+          <img src="images/icon-clock.svg" alt="" width="16" height="16" />
+          <p class="text-soft-blue text-[15px]">3 days left</p>
+        </div>
+      </div>
+
+      <div class="creator__container flex items-center md:mb-2">
+        <img
+          src="images/image-avatar.png"
+          alt="jules wyvern creator avatar"
+          height="32"
+          width="32"
+          class="rounded-full border border-white mr-4"
+        />
+        <p class="text-soft-blue text-[15px]">
+          Creation of
+          <span class="text-white hover:text-fm-cyan cursor-pointer"
+            >Jules Wyvern</span
+          >
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
